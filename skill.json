@@ -1,0 +1,35 @@
+{
+  "name": "genpark-user-research-interview-thematic-insight-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational user research audio transcript analyzer & thematic insight clusterer.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "user-research",
+    "interview-synthesizer",
+    "thematic-clustering",
+    "customer-insights",
+    "ph-august18"
+  ],
+  "inputs": {
+    "interview_transcripts": {
+      "type": "array"
+    },
+    "research_goal": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "top_thematic_clusters": {
+      "type": "array"
+    },
+    "actionable_recommendations": {
+      "type": "array"
+    },
+    "confidence_score_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
